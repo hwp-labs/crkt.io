@@ -7,7 +7,8 @@ export default class NewsService {
     return post
       ? shuffleArray(
           post.root
-            .map(({ thumbnail, title, summary, posted, status }) => {
+            .map((p) => {
+              const { thumbnail, title, summary, posted, status } = p;
               return {
                 thumbnail,
                 thumbnail_f: OdaraTvPost.getThumbnail(thumbnail),
@@ -17,7 +18,7 @@ export default class NewsService {
                 posted_f: OdaraTvPost.getCreatedAt(posted),
                 status,
                 status_f: OdaraTvPost.getStatus(status),
-                uuid: OdaraTvPost.getUuid(title),
+                uuid: OdaraTvPost.getUuid(p),
               };
             })
             .slice(0, 10)

@@ -27,6 +27,11 @@
       "favicon": "./assets/favicon.png"
     },
     "description": "News aggregator powered by OpenAI",
-    "githubUrl": "https://github.com/hwplabs/crkt.io"
+    "githubUrl": "https://github.com/hwplabs/crkt.io",
+    "extra": {
+      "eas": {
+        "projectId": "3ec3d601-ef99-445a-83d0-b9fab09d8124"
+      }
+    }
   }
 }
