@@ -11,7 +11,8 @@ function ArticleScreen({ navigation: N, route: R }) {
 
   return (
     <View style={styles.container}>
-      <Text style={{ color: "#fff" }}>Post UUID: {R.params.uuid}</Text>
+      <Text style={{ color: "#fff" }}>{R.params.uuid}</Text>
+      <Text style={{ color: "#fff" }}>#post-uuid</Text>
     </View>
   );
 }
