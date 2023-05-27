@@ -1,21 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native";
+import { IconComponentProvider, Icon } from "@react-native-material/core";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+//
+import NewsStack from "./navigators/NewsStack";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>CRKT.de</Text>
+    <SafeAreaView style={{ flex: 1 }}>
+      <IconComponentProvider IconComponent={MaterialCommunityIcons}>
+        <NewsStack />
+      </IconComponentProvider>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#feb000',
-    color: '#222',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
