@@ -1,6 +1,6 @@
 export default function useMockData(file) {
   const files = {
-    news: 0,
+    news: 1,
     article: 1
   };
 
