@@ -6,3 +6,4 @@ export default function useMockData(file) {
 
   return files[file] || 0;
 }
+ 

@@ -4,12 +4,12 @@ import { COLOR } from "../../utils/constants";
 
 export default StyleSheet.create({
   container: {
-    // paddingLeft: "15px",
-    // paddingRight: "15px",
+    paddingLeft: 15,
+    paddingRight: 15,
   },
   card: {
     backgroundColor: COLOR.accent,
-    // marginTop: "15px",
+    marginTop: 15,
   },
   cardTop: {
     height: 340,
@@ -49,7 +49,8 @@ export default StyleSheet.create({
     flexDirection: "row",
   },
   iconText: {
-    marginTop: 1,
-    marginLeft: 4,
+    color: "#888",
+    marginTop: 2,
+    marginLeft: 8,
   },
 });

@@ -1,10 +1,9 @@
 import * as React from "react";
 import { ActivityIndicator, View } from "react-native";
 //
-import Splash from "../../components/Splash";
 import Card from "../../components/Card";
 //
-import { useDelay, useMemoizer as $ } from "../../hooks";
+import { useMemoizer as $ } from "../../hooks";
 //
 import useNews from "./useNews";
 import styles from "./News.module";

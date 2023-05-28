@@ -17,7 +17,8 @@ export default class NewsService {
                 posted,
                 posted_f: OdaraTvPost.getCreatedAt(posted),
                 status,
-                status_f: OdaraTvPost.getStatus(status),
+                status_f: OdaraTvPost.getStatusText(status),
+                status_ico: OdaraTvPost.getStatusIcon(status),
                 uuid: OdaraTvPost.getUuid(p),
               };
             })

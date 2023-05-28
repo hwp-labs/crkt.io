@@ -6,7 +6,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from "react-native";
-import { Icon } from "@react-native-material/core";
+import Fa from "@expo/vector-icons/FontAwesome5";
 
 import styles from "./Card.module";
 //
@@ -36,12 +36,12 @@ const Card = ({ data, action }) => {
               {/*  */}
               <View style={styles.cardBottom}>
                 <Text style={styles.meta}>{i.posted_f}</Text>
-                <Text style={styles.meta}>
-                  <View style={styles.iconWrapper}>
-                    <Icon name="youtube" size={22} color="#888" />
-                    <Text style={styles.iconText}>{i.status_f}</Text>
-                  </View>
-                </Text>
+                {/* <Text style={styles.meta}> */}
+                <View style={styles.iconWrapper}>
+                  <Fa name={i.status_ico} size={22} color="#888" />
+                  <Text style={styles.iconText}>{i.status_f}</Text>
+                </View>
+                {/* </Text> */}
               </View>
             </View>
           </View>
